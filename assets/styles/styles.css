@@ -1,0 +1,95 @@
+@import url('./reset.css');
+
+section.content {
+  padding: 250px 100px 100px 100px;
+}
+
+section.content .interface {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.content .ttl-content {
+  text-align: right;
+}
+
+.content .login {
+  border: 1px solid #f1f1f136;
+  border-radius: 35px;
+  box-shadow: 0px 0px 8px #f1f1f19d;
+  padding: 25px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.content .login .input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content .login .input-login {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.content .login .input-login h3 {
+  padding: 0px 0px 0px 5px;
+}
+
+.content .login .input-login input {
+  height: 25px;
+  text-align: left;
+  padding: 0px 0px 0px 5px;
+  border-radius: 7px;
+  border: none;
+}
+
+.content .login .btn-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .login .btn-login button {
+  background-color: #f1f1f1;
+  border: none;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bolder;
+  border-radius: 7px;
+  margin-top: 15px;
+}
+
+.content .login .btn-login button:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.content .login .link-login {
+  text-align: center;
+}
+
+.content .login .link-login a {
+  color: #f1f1f1;
+  font-size: 13px;
+}
+
+/* 404 */
+
+.corpo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.corpo h1 {
+  font-size: 52px;
+}

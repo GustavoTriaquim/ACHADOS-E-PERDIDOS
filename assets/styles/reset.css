@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  min-width: none;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+  height: 100vh;
+  background-color: #0c0c0c;
+  color: #f1f1f1;
+}
+
+.interface {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+h1.titulo {
+  font-size: 48px;
+}
+
+a {
+  color: #f1f1f1;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* HEADER */
+
+header {
+  background-color: #0c0c0c;
+  box-shadow: 0 4px 6px -4px #f1f1f1;
+  width: 100vw;
+  padding: 15px 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 50px;
+}
+
+header .interface {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header .trim h1 {
+  font-size: 45px;
+  cursor: default;
+}
+
+header .desktop ul {
+  display: flex;
+  gap: 50px;
+}
+
+header .desktop ul li {
+  transition: 0.3s;
+}
+
+header .desktop ul li:hover {
+  transform: scale(1.05);
+}
+
+header .desktop ul li a {
+  font-size: 20px;
+  color: #f1f1f19d;
+  transition: 0.3s;
+}
+
+header .desktop ul li a:hover {
+  color: #f1f1f1;
+}
+
+header .btn-pages button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  color: #f1f1f1;
+  background-color: #0c0c0c;
+  border: 1px solid #f1f1f1;
+  transition: 0.3s;
+}
+
+header .btn-pages button:hover {
+  transform: scale(1.05);
+  background-color: #f1f1f1;
+  box-shadow: 0px 0px 8px #f1f1f19d;
+  color: #0c0c0c;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* MAIN */
+
+main {
+  margin-top: 70px;
+}
+
+main section.topo {
+  height: calc(100vh - 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+main.yagami section.topo {
+  background-image: url(../images/WhatsApp\ Image\ 2024-11-24\ at\ 12.34.44_98debeb3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main section.topo .interface {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  gap: 30px;
+}
+
+main .topo .txt-topo {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+main .topo .txt-topo p {
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+main .topo .btn-suporte button {
+  width: 300px;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  background-color: #f1f1f1;
+  font-size: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+main .topo .btn-suporte button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 8px #f1f1f1;
+  cursor: pointer;
+}
