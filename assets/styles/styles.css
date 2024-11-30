@@ -93,3 +93,47 @@ section.content .interface {
 .corpo h1 {
   font-size: 52px;
 }
+
+.corpo .pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+/* YAGAMI */
+
+main.yagami section.topo {
+  background-image: url(../images/Yagami/WhatsApp\ Image\ 2024-11-24\ at\ 12.34.44_98debeb3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* PUDIM */
+
+main.pudim section.topo {
+  background-image: url(../images/Pudim/Pudim_Fundo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* GHOSTZIN */
+
+main.ghostzin section.topo {
+  background-image: url(../images/Ghostzin/ghostzin_fundo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* RUSSEL */
+
+main.russel section.topo {
+  background-image: url();
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
