@@ -44,3 +44,43 @@ function verificarUsuario() {
     zerarInputs();
   }
 }
+
+/* MODAL */
+
+function abrirModal(tipo, src, elementoOriginal = null) {
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modal-img');
+  const modalVideo = document.getElementById('modal-video');
+
+  document.querySelectorAll('video').forEach(video => video.pause());
+
+  if (tipo === 'foto') {
+    modalImg.src = src;
+    modalImg.style.display = 'block';
+    modalVideo.style.display = 'none';
+    modalVideo.pause();
+    modalVideo.src = '';
+  } else if (tipo === 'video') {
+    modalVideo.src = src;
+    modalVideo.style.display = 'block';
+    modalVideo.controls = true;
+    modalVideo.play();
+    modalImg.style.display = 'none';
+
+    if (elementoOriginal) {
+      elementoOriginal.pause();
+    }
+  }
+  modal.style.display = 'flex';
+}
+
+function fecharModal() {
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modal-img');
+  const modalVideo = document.getElementById('modal-video');
+
+  modal.style.display = 'none';
+  modalImg.src = '';
+  modalVideo.pause();
+  modalVideo.src = '';
+}
