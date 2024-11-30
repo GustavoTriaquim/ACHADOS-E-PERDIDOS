@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VALE - Gays: Pudim</title>
+  <link rel="stylesheet" href="../assets/styles/styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="interface">
+      <div class="trim">
+        <h1>PUDIM</h1>
+      </div><!--trim-->
+      <nav class="desktop">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#fotos">Fotos</a></li>
+          <li><a href="#videos">Clipes</a></li>
+        </ul>
+      </nav><!--desktop-->
+      <div class="btn-pages">
+        <a href="./404.html">
+          <button>Users</button>
+        </a>
+      </div><!--btn-pages-->
+    </div><!--interface-->
+  </header>
+  <main class="pudim">
+    <section class="topo">
+      <div class="interface">
+        <h1 class="titulo">Emilly Laiane Jesus da Silva</h1>
+        <div class="txt-topo">
+          <p>Essu arrombade naziste filhe du pute que meis coringue que tude e é provavelmente ume traficante de erve em
+            Colombe.</p>
+          <p>Conheçu a pessoe que per mei que parece ume anje, que gadeia mache e vira o demonie quande esté bravinhe.
+          </p>
+        </div><!--txt-topo-->
+        <div class="btn-suporte">
+          <a href="./404.html">
+            <button>SUPORTE</button>
+          </a>
+        </div><!--btn-suporte-->
+      </div><!--interface-->
+    </section><!--topo-->
+    <section id="sobre" class="sobre">
+      <div class="interface">
+        <h1 class="titulo">SOBRE</h1>
+        <div class="flex">
+          <div class="txt-sobre">
+            <p>
+              Emilly Laiane Jesus da Silva apesar de ser jovem aparenta ser uma idosa de 87 anos, porem é muito
+              talentosa, mora em Colombo, conhecida pelo seu carisma único e habilidades impressionantes no valorant
+              (confira nos clipes abaixo).
+            </p>
+            <p>
+              Embora seja quieta e reservada, pudim guarda uma personalidade cheia de surpresas. Muitas vezes, enquanto
+              esta silenciosa, na verdade, está rindo maleficamente ao presenciar as peripécias de seus amigos. Seu
+              humor sarcástico são marcas registradas, conquistando todos ao seu redor.
+            </p>
+            <p>
+              No entanto, quando esta brava, sobe uma força da natureza (sua casa), um verdadeiro satanás.
+              Multifacetada, ela equilibra diversão, intensidade e amizade, sendo uma presença quase indispensável na
+              nossa equipe.
+            </p>
+          </div><!--txt-sobre-->
+          <div class="img-sobre">
+            <img src="../assets/images/Pudim/Screenshot_20241129_173941_TikTok.jpg" alt="Pudim">
+          </div><!--img-sobre-->
+        </div><!--flex-->
+      </div><!--interface-->
+    </section><!--sobre-->
+    <section class="galeria">
+      <div class="interface">
+        <h1 class="titulo">FOTOS</h1>
+        <div id="fotos" class="grid-galeria fotos">
+          <div class="item">
+            <img src="../assets/images/Pudim/Screenshot_20241129_172822_TikTok.jpg"
+              onclick="abrirModal('foto', this.src)">
+          </div><!--item-->
+          <div class="item">
+            <img src="../assets/images/Pudim/Screenshot_20241129_172733_TikTok.jpg"
+              onclick="abrirModal('foto', this.src)">
+          </div><!--item-->
+        </div><!--grid-galeria fotos-->
+      </div><!--interface-->
+      <h1 class="titulo">VIDEOS</h1>
+      <div class="interface">
+        <div id="videos" class="grid-galeria videos">
+          <div class="item">
+            <div class="item">
+              <video src="../assets/videos/Pudim/Valorant_2024.11.23_-_22.25.29.21.DVR.mp4" controls
+                onclick="abrirModal('video', this.src, this)"></video>
+            </div><!--item-->
+            <div class="item">
+              <video src="../assets/videos/Pudim/atrocidades_da_emilly (1).mp4" controls
+                onclick="abrirModal('video', this.src, this)"></video>
+            </div><!--item-->
+            <div class="item">
+              <video src="../assets/videos/Pudim/power_point (1).mp4" controls
+                onclick="abrirModal('video', this.src, this)"></video>
+            </div><!--item-->
+          </div><!--grid-galeria videos-->
+        </div><!--interface-->
+
+        <!--Modal-->
+        <div id="modal" class="modal" onclick="fecharModal()">
+          <span class="fechar">&times;</span>
+          <div class="conteudo-modal">
+            <img id="modal-img" src="" alt="">
+            <video id="modal-video" src=""></video>
+          </div><!--conteudo-modal-->
+        </div><!--modal-->
+    </section><!--galeria-->
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>

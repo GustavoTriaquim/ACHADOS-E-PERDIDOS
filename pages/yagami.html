@@ -16,9 +16,9 @@
       </div><!--trim-->
       <nav class="desktop">
         <ul>
-          <li><a href="./404.html">Sobre</a></li>
-          <li><a href="./404.html">Fotos</a></li>
-          <li><a href="./404.html">Clipes</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#fotos">Fotos</a></li>
+          <li><a href="#videos">Clipes</a></li>
         </ul>
       </nav><!--desktop-->
       <div class="btn-pages">
@@ -47,10 +47,77 @@
           <a href="./404.html">
             <button>SUPORTE</button>
           </a>
-        </div>
+        </div><!--btn-suporte-->
       </div><!--interface-->
     </section><!--topo-->
+    <section id="sobre" class="sobre">
+      <div class="interface">
+        <h1 class="titulo">SOBRE</h1>
+        <div class="flex">
+          <div class="txt-sobre">
+            <p>
+              Gabryel, nascido em Goiânia, e, desde cedo, mostrou interesse por tecnologia
+              e criatividade. Ele gosta de programar, explorando soluções e ideias inovadoras,
+              além de dedicar um BOOOM tempo aos jogos que desafiam lógica e estratégia.
+            </p>
+            <p>
+              Apesar de sua personalidade extrovertida, Yagami é ambivertido, o que significa
+              que às vezes, precisa ficar sozinho, mas apesar disso, valoriza muito com seus
+              amigos. Esses momentos de isolamento são importantes para ele recarregar as
+              energias e colocar as ideias em ordem.
+            </p>
+            <p>
+              No grupo, ele é o "clipeiro" oficial e está sempre no centro das piadas
+              e memórias compartilhadas, mas também é quem sabe equilibrar as brincadeiras
+              com momentos de introspecção.
+            </p>
+          </div><!--txt-sobre-->
+          <div class="img-sobre">
+            <img src="../assets/images/Yagami/WhatsApp Image 2024-11-23 at 14.03.08_03a8e9cc.jpg" alt="Yagami">
+          </div><!--img-sobre-->
+        </div><!--flex-->
+      </div><!--interface-->
+    </section><!--sobre-->
+    <section class="galeria">
+      <div class="interface">
+        <h1 class="titulo">FOTOS</h1>
+        <div id="fotos" class="grid-galeria fotos">
+          <div class="item">
+            <img src="../assets/images/Yagami/image.png" onclick="abrirModal('foto', this.src)">
+          </div><!--item-->
+          <div class="item">
+            <img src="../assets/images/Yagami/gabryel zoom.jpg" onclick="abrirModal('foto', this.src)">
+          </div><!--item-->
+          <div class="item">
+            <img src="../assets/images/Yagami/gabryel cabelo.jpg" onclick="abrirModal('foto', this.src)">
+          </div><!--item-->
+          <div class="item">
+            <img src="../assets/images/Yagami/yagami.png" onclick="abrirModal('foto', this.src)">
+          </div>
+        </div><!--grid-galeria fotos-->
+      </div><!--interface-->
+      <h1 class="titulo">VIDEOS</h1>
+      <div class="interface">
+        <div id="videos" class="grid-galeria videos">
+          <div class="item">
+            <video src="../assets/videos/Untitled video - Made with Clipchamp.mp4" controls
+              onclick="abrirModal('video', this.src, this)"></video>
+          </div><!--item-->
+        </div><!--grid-galeria videos-->
+      </div><!--interface-->
+
+      <!--Modal-->
+      <div id="modal" class="modal" onclick="fecharModal()">
+        <span class="fechar">&times;</span>
+        <div class="conteudo-modal">
+          <img id="modal-img" src="" alt="">
+          <video src="" id="modal-video"></video>
+        </div><!--conteudo-modal-->
+      </div><!--modal-->
+    </section><!--galeria-->
   </main>
+
+  <script src="../script.js"></script>
 </body>
 
 </html>
